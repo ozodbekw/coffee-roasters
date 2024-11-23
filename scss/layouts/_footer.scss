@@ -1,0 +1,28 @@
+.footer-container {
+  margin-bottom: 8.8rem;
+  padding: 1.7rem 8.5rem;
+  height: 120px;
+  background-color: $dark-black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__links {
+  display: flex;
+  gap: 10.29rem;
+  a:hover {
+    color: $light-cream;
+  }
+}
+
+.footer__socials {
+  display: flex;
+  gap: 2.4rem;
+  svg {
+    cursor: pointer;
+    &:hover path {
+      fill: $pale-orange;
+    }
+  }
+}
