@@ -341,6 +341,7 @@ body {
   background-color: #fefcf7;
   font-size: 1.6rem;
   line-height: 1.625;
+  font-weight: 400;
 }
 
 main {
@@ -370,7 +371,7 @@ main {
 .ring {
   width: 100px;
   height: 100px;
-  border: 6px dotted #FFF;
+  border: 6px dotted #fff;
   border-style: solid solid dotted dotted;
   border-radius: 50%;
   display: inline-block;
@@ -413,174 +414,21 @@ main {
     transform: rotate(-360deg);
   }
 }
-.hero {
-  background-image: url("../images/home/desktop/image-hero-coffeepress.jpg");
-  background-repeat: no-repeat;
-  border-radius: 16px;
-  height: 600px;
-  padding: 117px 85px;
-}
-
-.hero__title {
-  font-family: "Fraunces", serif;
-  font-size: 7.2rem;
-  line-height: 1;
-  color: #fefcf7;
-  width: 493px;
-  margin-bottom: 32px;
-}
-
-.hero__describtion {
-  width: 445px;
-  margin-bottom: 56px;
-}
-
-/* Colleciton */
-.collection {
-  text-align: center;
-}
-
-.collection-bg {
-  top: 70px;
-  position: relative;
-  z-index: -1;
-}
-
-.collection__cards {
-  display: flex;
-  justify-content: space-around;
-  gap: 30px;
-}
-
-.collection__card {
-  width: 25.6rem;
-  height: 33.9rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.collection__img {
-  margin-bottom: 7.155rem;
-}
-
-.collection__title {
-  color: #333d4b;
-  line-height: 1.3;
-  margin-bottom: 2.4rem;
-  font-family: "Fraunces", serif;
-  font-size: 2.4rem;
-  font-weight: 900;
-}
-
-.collection__describtion {
-  height: 134px;
-}
-
-/* Choose */
-.choose {
-  margin-top: 20rem;
-  margin-bottom: 20rem;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  background-color: #2C343E;
-  border-radius: 10px;
-  position: relative;
-  height: 577px;
-}
-
-.choose__text {
-  margin-top: 10rem;
-}
-
-.choose__title {
-  color: #fefcf7;
-  margin-bottom: 3.2rem;
-  font-family: "Fraunces", serif;
-  font-weight: 900;
-  font-size: 4rem;
-}
-
-.choose__describtion {
-  width: 540px;
-  height: 80px;
-}
-
-.choose__cards {
-  display: flex;
-  gap: 3rem;
-  position: absolute;
-  top: 346px;
-}
-
-.choose__card {
-  background-color: #0e8784;
-  color: #fefcf7;
-  border-radius: 8px;
-  height: 382px;
-  width: 350px;
-  text-align: center;
-}
-
-.choose__card-image {
-  margin-top: 7.2rem;
-  margin-bottom: 5.6rem;
-}
-
-.choose__card-title {
-  line-height: 1.3;
-  margin-bottom: 2.4rem;
-  font-family: "Fraunces", serif;
-  font-weight: 900;
-  font-size: 2.4rem;
-}
-
-.choose__card-describtion {
-  width: 255px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.work {
-  margin: 20rem 8.5rem;
-}
-
-.works__caption {
-  margin-top: 30rem;
-  font-family: "Fraunces", serif;
-  font-weight: 900;
-  font-size: 2.4rem;
-  line-height: 1.3;
-}
-
-.work__cards-wrapper {
+.cards__decoration {
+  height: 1px;
+  width: 85rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: #fdd6ba;
+  margin-top: 9.5rem;
 }
-
-.work__card-number {
-  color: #fdd6ba;
-  font-family: "Fraunces", serif;
-  font-weight: 900;
-  font-size: 7.2rem;
-}
-
-.work__card-title {
-  margin-top: -3.8rem;
-  margin-bottom: 4.2rem;
-  color: #333d4b;
-  line-height: 1.125;
-  width: 25.5rem;
-  font-family: "Fraunces", serif;
-  font-weight: 900;
-  font-size: 3.2rem;
-}
-
-.work__card-describtion {
-  width: 285px;
-  margin-bottom: 6.4rem;
+.cards__decoration span {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  border: 2px #0e8784 solid;
+  background-color: #fefcf7;
 }
 
 @font-face {
@@ -682,4 +530,991 @@ main {
 }
 .footer__socials svg:hover path {
   fill: #fdd6ba;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    margin-bottom: 7.2rem;
+    padding: 5.4rem 0;
+    height: 27rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6.5rem;
+    text-align: center;
+  }
+  .footer__links {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+  .footer__links a {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.9230769277px;
+  }
+}
+.subcribe__main {
+  display: flex;
+  flex-direction: column;
+  gap: 16.8rem;
+}
+
+.subcribe {
+  padding: 13.4rem 8.5rem;
+  background-image: url(../images/plan/desktop/image-hero-blackcup.jpg);
+  border-radius: 1rem;
+}
+
+.subcribe__title {
+  margin-top: 0;
+  margin-bottom: 3.2rem;
+  font-family: "Fraunces", serif;
+  color: #fefcf7;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 72px;
+}
+
+.subcribe__describtion {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  width: 445px;
+  height: 78px;
+  color: #fefcf7;
+  opacity: 80%;
+}
+
+/* Order steps */
+.order__steps {
+  padding: 10rem 15rem 8.5rem;
+  background-image: url(../images/plan/desktop/bg-steps.png);
+}
+
+.order__cards_decoration {
+  width: 780px;
+  height: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fdd6ba;
+  margin-bottom: 8.2rem;
+  position: relative;
+}
+.order__cards_decoration span {
+  width: 31px;
+  height: 31px;
+  background-color: transparent;
+  border: #0e8784 2px solid;
+  border-radius: 50%;
+}
+.order__cards_decoration span:first-child {
+  position: absolute;
+  left: -15px;
+}
+.order__cards_decoration span:last-child {
+  position: absolute;
+  right: -15px;
+}
+
+.order__steps_cards {
+  display: flex;
+  gap: 9.5rem;
+}
+
+.order__steps_card {
+  width: 285px;
+  height: 355px;
+}
+
+.order__steps-number {
+  font-family: "Fraunces", serif;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 72px;
+  color: #fdd6ba;
+  margin-bottom: 3.8rem;
+  margin-top: 0;
+}
+
+.order__steps-title {
+  margin-bottom: 4.2rem;
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 36px;
+  color: #fefcf7;
+  width: 25.5rem;
+}
+
+.order__steps-describtion {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 80%;
+  color: #fefcf7;
+  width: 28.5rem;
+}
+
+/* Order summary */
+.order-summary {
+  display: flex;
+  gap: 12.5rem;
+}
+
+.coffee__types {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.coffee__type {
+  cursor: pointer;
+  display: flex;
+  gap: 2.25rem;
+  width: 25.5rem;
+}
+
+.coffee__type:not(:last-child) {
+  border-bottom: 1px solid #83888f;
+  padding-bottom: 2.4rem;
+}
+
+.coffee__number {
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+}
+
+.active__number {
+  color: #0e8784;
+}
+
+.unactive__number {
+  color: #83888f;
+}
+
+.coffee__name {
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+}
+
+.active__name {
+  color: #333d4b;
+}
+
+.unactive__name {
+  opacity: 90%;
+}
+
+.drink__coffee {
+  display: flex;
+  flex-direction: column;
+  gap: 8.8rem;
+}
+
+.drink__coffee_title {
+  font-family: "Fraunces", serif;
+  color: #83888f;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 48px;
+}
+
+.drink__coffee_title_arrow {
+  width: 18.19px;
+  height: 11.92px;
+  margin-left: 7.959rem;
+  cursor: pointer;
+}
+
+.drink__coffee_cards-wrapper {
+  margin-top: -3.2rem;
+  display: flex;
+  gap: 2.3rem;
+}
+
+.drink__coffee_card {
+  padding: 3.2rem 2.8rem;
+  width: 228px;
+  height: 250px;
+  background-color: #f4f1eb;
+}
+
+.drink__coffee_card-colored {
+  background-color: #0e8784;
+  color: #fefcf7;
+}
+
+.drink__coffee-title-colored {
+  color: #fefcf7;
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  margin-bottom: 2.4rem;
+}
+
+.drink__coffee-title {
+  font-family: "Fraunces", serif;
+  color: #333d4b;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  margin-bottom: 2.4rem;
+}
+
+.order__questions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order_summary_card {
+  padding: 4.7rem 6.4rem;
+  background-image: url(../images/plan/desktop/bg-order-summary.png);
+  border-radius: 1rem;
+}
+
+.summaary_caption {
+  opacity: 0.5;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 0.8rem;
+}
+
+.summary_text {
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 40px;
+  color: #fefcf7;
+}
+.summary_text span {
+  color: #0e8784;
+}
+
+.btn_order {
+  margin-left: 51.3rem;
+  margin-top: -4.8rem;
+  margin-bottom: 16.8rem;
+  width: 217px;
+  height: 56px;
+  border-radius: 6px;
+  background-color: #e2dedb;
+  color: #fefcf7;
+  border: 0;
+  font-family: "Fraunces", serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .subcribe__main {
+    gap: 14.4rem;
+  }
+  .subcribe {
+    padding: 12.7rem 5.8rem;
+    background-position: center;
+    width: 689px;
+    height: 400px;
+  }
+  .subcribe__title {
+    margin-top: 8.7rem;
+    margin-bottom: 3.2rem;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 48px;
+  }
+  .subcribe__describtion {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    width: 398px;
+    height: 75px;
+  }
+  /* Order steps */
+  .order__steps {
+    padding: 9.7rem 4rem 7rem;
+    width: 768px;
+    height: 640px;
+  }
+  .order__cards_decoration {
+    width: 497px;
+  }
+  .order__steps_cards {
+    display: flex;
+    gap: 0;
+  }
+  .order__steps_card {
+    width: 223px;
+    height: 367px;
+  }
+  .order__steps-number {
+    font-size: 72px;
+    line-height: 72px;
+    margin-bottom: 3.8rem;
+    margin-top: 0;
+  }
+  .order__steps-title {
+    margin-bottom: 4.2rem;
+    font-size: 28px;
+    line-height: 32px;
+    width: 20.5rem;
+  }
+  .order__steps-describtion {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 22.5rem;
+  }
+  /* Order summary */
+  .order-summary {
+    display: flex;
+    gap: 0;
+  }
+  .coffee__types {
+    display: none;
+  }
+  .drink__coffee {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+  }
+  .drink__coffee_title {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 48px;
+  }
+  .drink__coffee_title_arrow {
+    width: 18.19px;
+    height: 11.92px;
+    margin-left: 7.959rem;
+    cursor: pointer;
+  }
+  .drink__coffee_cards-wrapper {
+    margin-top: -3.2rem;
+    display: flex;
+    gap: 1rem;
+  }
+  .drink__coffee_card {
+    padding: 3.2rem 2.6rem;
+    width: 223px;
+    height: 250px;
+    border-radius: 1rem;
+  }
+  .drink__coffee-title {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    margin-bottom: 2.4rem;
+  }
+  .order_summary_card {
+    padding: 4.7rem 6.4rem;
+    background-image: url(../images/plan/desktop/bg-order-summary.png);
+    border-radius: 1rem;
+  }
+  .summaary_caption {
+    opacity: 0.5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 0.8rem;
+  }
+  .summary_text {
+    font-family: "Fraunces", serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 40px;
+    color: #fefcf7;
+  }
+  .summary_text span {
+    color: #0e8784;
+  }
+  .btn_order {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -4.8rem;
+    margin-bottom: 16.8rem;
+    width: 217px;
+    height: 56px;
+    border-radius: 6px;
+    background-color: #0e8784;
+    color: #fefcf7;
+    border: 0;
+    font-family: "Fraunces", serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+    cursor: pointer;
+  }
+}
+.about__main {
+  display: flex;
+  flex-direction: column;
+  gap: 16.8rem;
+}
+
+.about {
+  padding: 13.7rem 8.5rem;
+  border-radius: 1rem;
+  background-image: url(../images/about/desktop/image-hero-whitecup.jpg);
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about__title {
+  font-family: "Fraunces";
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 48px;
+  color: #fefcf7;
+  margin-bottom: 2.4rem;
+  margin-top: 0;
+}
+
+.about__describtion {
+  width: 445px;
+  height: 104px;
+  color: #fefcf7;
+}
+
+/* Comminents */
+.comminent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.comminent__img {
+  border-radius: 1rem;
+}
+
+.comminent__title {
+  margin-bottom: 3.2rem;
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 48px;
+  color: #333d4b;
+}
+
+.comminent__describtion {
+  width: 540px;
+  height: 260px;
+  opacity: 80%;
+  color: #333d4b;
+}
+
+/* quality */
+.quality {
+  padding: 0 8.5rem;
+  display: flex;
+  gap: 12.5rem;
+  align-items: center;
+  background-image: url(../images/about/desktop/bg-quality.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.quality__text {
+  margin-top: 17.6rem;
+  margin-bottom: 17.6rem;
+}
+
+.quality__title {
+  margin-bottom: 3.2rem;
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 48px;
+  color: #fefcf7;
+}
+
+.quality__describtion {
+  opacity: 80%;
+  color: #fefcf7;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.quality__img {
+  padding-bottom: 8.5rem;
+  border-radius: 1rem;
+}
+
+/* Headquaarters */
+.headquarters {
+  padding: 0 8.5rem;
+  margin-bottom: 16.8rem;
+}
+
+.headquarts__title {
+  margin-bottom: 7.2rem;
+  font-family: "Fraunces", serif;
+}
+
+.headquarters__cards-wrapper {
+  display: flex;
+  gap: 9.5rem;
+}
+
+.headquarters__card-title {
+  width: 272px;
+  height: 36px;
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 36px;
+  margin-top: 4.5rem;
+  margin-bottom: 2.4rem;
+  color: #333d4b;
+}
+
+.headquarters__card-adress {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.headquarters__card-adress a {
+  color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .about__main {
+    gap: 14.4rem;
+  }
+  .about {
+    padding: 13.7rem 5.8rem;
+    border-radius: 1rem;
+    background-image: url(../images/about/desktop/image-hero-whitecup.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .about__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .about__describtion {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 80%;
+    width: 398px;
+    height: 100px;
+  }
+  /* Comminents */
+  .comminent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6.9rem;
+  }
+  .comminent__img {
+    width: 281px;
+    height: 470px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .comminent__text {
+    width: 339px;
+    height: 453px;
+    padding: 0px 0px 25px 0px;
+  }
+  .comminent__title {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 3rem;
+  }
+  .comminent__describtion {
+    width: 339px;
+    height: 350px;
+  }
+  /* quality */
+  .quality {
+    width: 688px;
+    height: 648px;
+    padding: 0 8.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12.5rem;
+    align-items: center;
+  }
+  .quality__text {
+    margin-top: 17.6rem;
+    margin-bottom: 17.6rem;
+  }
+  .quality__title {
+    margin-top: 20rem;
+    margin-bottom: 3.2rem;
+    font-family: "Fraunces", serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+    color: #fefcf7;
+  }
+  .quality__describtion {
+    opacity: 80%;
+    color: #fefcf7;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .quality__img {
+    padding-bottom: 6.4rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    width: 573px;
+    height: 320px;
+  }
+  /* Headquaarters */
+  .headquarters {
+    padding: 0;
+    margin-bottom: 16.8rem;
+  }
+  .headquarts__title {
+    margin-bottom: 14.4rem;
+    font-family: "Fraunces", serif;
+  }
+  .headquarters__card {
+    width: 22.3rem;
+  }
+  .headquarters__card-title {
+    width: 223px;
+    height: 36px;
+    font-family: Fraunces 9pt;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 4.8rem;
+    margin-bottom: 2.1rem;
+  }
+}
+.hero {
+  background-image: url("../images/home/desktop/image-hero-coffeepress.jpg");
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  height: 600px;
+  padding: 117px 85px;
+}
+
+.hero__title {
+  font-family: "Fraunces", serif;
+  font-size: 7.2rem;
+  line-height: 1;
+  color: #fefcf7;
+  width: 493px;
+  margin-bottom: 32px;
+}
+
+.hero__describtion {
+  width: 445px;
+  margin-bottom: 56px;
+}
+
+/* Colleciton */
+.collection {
+  text-align: center;
+}
+
+.collection-bg {
+  top: 70px;
+  position: relative;
+  z-index: -1;
+}
+
+.collection__cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.collection__card {
+  width: 25.6rem;
+  height: 33.9rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.collection__img {
+  margin-bottom: 7.155rem;
+}
+
+.collection__title {
+  color: #333d4b;
+  line-height: 1.3;
+  margin-bottom: 2.4rem;
+  font-family: "Fraunces", serif;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+.collection__describtion {
+  height: 134px;
+}
+
+/* Choose */
+.choose {
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #2C343E;
+  border-radius: 10px;
+  position: relative;
+  height: 577px;
+}
+
+.choose__text {
+  margin-top: 10rem;
+}
+
+.choose__title {
+  color: #fefcf7;
+  margin-bottom: 3.2rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.choose__describtion {
+  width: 540px;
+  height: 80px;
+}
+
+.choose__cards {
+  display: flex;
+  gap: 3rem;
+  position: static;
+  top: 346px;
+}
+
+.choose__card {
+  background-color: #0e8784;
+  color: #fefcf7;
+  border-radius: 8px;
+  height: 382px;
+  width: 350px;
+  text-align: center;
+}
+
+.choose__card-image {
+  margin-top: 7.2rem;
+  margin-bottom: 5.6rem;
+}
+
+.choose__card-title {
+  line-height: 1.3;
+  margin-bottom: 2.4rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 2.4rem;
+}
+
+/* Works */
+.choose__card-describtion {
+  width: 255px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work {
+  margin: 20rem 8.5rem;
+}
+
+.works__caption {
+  margin-top: 30rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
+
+.work__cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work__card-number {
+  color: #fdd6ba;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 7.2rem;
+}
+
+.work__card-title {
+  margin-top: -3.8rem;
+  margin-bottom: 4.2rem;
+  color: #333d4b;
+  line-height: 1.125;
+  width: 25.5rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 3.2rem;
+}
+
+.work__card-describtion {
+  width: 285px;
+  margin-bottom: 6.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 68.9rem;
+    padding: 4rem;
+  }
+  .hero {
+    height: 500px;
+    padding: 10.4rem 5.8rem;
+    max-width: 68.9rem;
+    background-position: center;
+  }
+  .hero__title {
+    font-size: 48px;
+    line-height: 48px;
+    width: 32.9rem;
+    margin-bottom: 2.4rem;
+  }
+  .hero__describtion {
+    width: 39.8rem;
+    margin-bottom: 4rem;
+  }
+  /* Collection section  */
+  .collection-bg {
+    top: 70px;
+    width: 689px;
+    height: 118px;
+  }
+  .collection__cards {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+  .collection__card {
+    width: 57.3rem;
+    height: 19.3rem;
+    flex-direction: row;
+    text-align: left;
+  }
+  .collection__img {
+    margin-bottom: 0;
+    width: 255px;
+    height: 193px;
+  }
+  .collection__title {
+    line-height: 1.3;
+    font-size: 24px;
+  }
+  /* choose section */
+  .choose {
+    margin-top: 14rem;
+    margin-bottom: 14rem;
+    background-color: #2C343E;
+    border-radius: 10px;
+    position: relative;
+    height: 577px;
+  }
+  .choose__text {
+    margin-top: 10rem;
+  }
+  .choose__title {
+    color: #fefcf7;
+    margin-bottom: 2.4rem;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .choose__describtion {
+    width: 540px;
+    height: 80px;
+  }
+  .choose__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 7rem;
+    margin-bottom: 14.4rem;
+  }
+  .choose__card {
+    text-align: left;
+    padding: 4rem 4rem 4rem 4rem;
+    max-width: 573px;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    gap: 5.5rem;
+  }
+  .choose__card-image {
+    margin-top: 0.5rem;
+    margin-bottom: 5rem;
+    margin-left: 0;
+  }
+  .choose__card-title {
+    margin-bottom: 1.6rem;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+  }
+  .choose__card-describtion {
+    width: 100%;
+    max-width: 344px;
+    margin-left: 0;
+  }
+  /* Work */
+  .work {
+    margin-top: 14.4rem;
+    margin: 0;
+  }
+  .works__caption {
+    margin-top: 35rem;
+  }
+  .work__cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .work__card {
+    width: 223px;
+    height: 371px;
+  }
+  .work__card-title {
+    margin-top: -3.8rem;
+    margin-bottom: 3.8rem;
+    color: #333d4b;
+    line-height: 1.125;
+    width: 25.5rem;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 3.2rem;
+  }
+  .work__card-number {
+    margin-top: 0;
+  }
+  .work__card-describtion {
+    width: 223px;
+    height: 154px;
+    margin-bottom: 6.4rem;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  .btn {
+    margin-top: 4.4rem;
+  }
+  .cards__decoration {
+    height: 2px;
+    width: 46.7rem;
+  }
 }/*# sourceMappingURL=main.css.map */

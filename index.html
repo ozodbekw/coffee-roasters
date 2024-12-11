@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coffee Roasters</title>
+    <title>Coffee Roasters | Home</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="./css/main.css" />
@@ -16,9 +16,9 @@
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <div class="loader">
+    <!-- <div class="loader">
       <div class="ring"></div>
-    </div>
+    </div> -->
 
     <!-- Header  -->
     <header class="site-header">
@@ -28,9 +28,11 @@
         </a>
         <nav class="nav">
           <ul class="nav-list">
-            <li class="list-item"><a href="#">HOME</a></li>
-            <li class="list-item"><a href="#">ABOUT US</a></li>
-            <li class="list-item"><a href="#">CREATE YOUR PLAN</a></li>
+            <li class="list-item"><a href="index.html">HOME</a></li>
+            <li class="list-item"><a href="./pages/about.html">ABOUT US</a></li>
+            <li class="list-item">
+              <a href="./pages/subscribe.html">CREATE YOUR PLAN</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -62,11 +64,13 @@
               src="./images/home/desktop/image-gran-espresso.png"
               alt=""
             />
-            <h3 class="collection__title">Gran Espresso</h3>
-            <p class="collection__describtion">
-              Light and flavorful blend with cocoa and black pepper for an
-              intense experience.
-            </p>
+            <div class="collection_text">
+              <h3 class="collection__title">Gran Espresso</h3>
+              <p class="collection__describtion">
+                Light and flavorful blend with cocoa and black pepper for an
+                intense experience.
+              </p>
+            </div>
           </div>
           <div class="collection__card">
             <img
@@ -74,11 +78,13 @@
               src="./images/home/desktop/image-planalto.png"
               alt=""
             />
-            <h3 class="collection__title">Planalto</h3>
-            <p class="collection__describtion">
-              Brazilian dark roast with rich and velvety body, and hints of
-              fruits and nuts.
-            </p>
+            <div class="collection__text">
+              <h3 class="collection__title">Planalto</h3>
+              <p class="collection__describtion">
+                Brazilian dark roast with rich and velvety body, and hints of
+                fruits and nuts.
+              </p>
+            </div>
           </div>
           <div class="collection__card">
             <img
@@ -86,11 +92,13 @@
               src="./images/home/desktop/image-piccollo.png"
               alt=""
             />
-            <h3 class="collection__title">Piccollo</h3>
-            <p class="collection__describtion">
-              Mild and smooth blend featuring notes of toasted almond and dried
-              cherry.
-            </p>
+            <div class="collection__text">
+              <h3 class="collection__title">Piccollo</h3>
+              <p class="collection__describtion">
+                Mild and smooth blend featuring notes of toasted almond and
+                dried cherry.
+              </p>
+            </div>
           </div>
           <div class="collection__card">
             <img
@@ -98,11 +106,13 @@
               src="./images/home/desktop/image-danche.png"
               alt=""
             />
-            <h3 class="collection__title">Danche</h3>
-            <p class="collection__describtion">
-              Ethiopian hand-harvested blend densely packed with vibrant fruit
-              notes.
-            </p>
+            <div class="collection__text">
+              <h3 class="collection__title">Danche</h3>
+              <p class="collection__describtion">
+                Ethiopian hand-harvested blend densely packed with vibrant fruit
+                notes.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -125,11 +135,13 @@
               alt=""
               class="choose__card-image"
             />
-            <h4 class="choose__card-title">Best quality</h4>
-            <p class="choose__card-describtion">
-              Discover an endless variety of the world’s best artisan coffee
-              from each of our roasters.
-            </p>
+            <div class="choose__card-text">
+              <h4 class="choose__card-title">Best quality</h4>
+              <p class="choose__card-describtion">
+                Discover an endless variety of the world’s best artisan coffee
+                from each of our roasters.
+              </p>
+            </div>
           </div>
           <div class="choose__card">
             <img
@@ -137,11 +149,13 @@
               alt=""
               class="choose__card-image"
             />
-            <h4 class="choose__card-title">Exclusive benefits</h4>
-            <p class="choose__card-describtion">
-              Special offers and swag when you subscribe, including 30% off your
-              first shipment.
-            </p>
+            <div class="choose__card-text">
+              <h4 class="choose__card-title">Exclusive benefits</h4>
+              <p class="choose__card-describtion">
+                Special offers and swag when you subscribe, including 30% off
+                your first shipment.
+              </p>
+            </div>
           </div>
           <div class="choose__card">
             <img
@@ -150,11 +164,13 @@
               class="choose__card-image"
               style="margin-top: 8.3rem; margin-bottom: 6.7rem"
             />
-            <h4 class="choose__card-title">Free shipping</h4>
-            <p class="choose__card-describtion">
-              We cover the cost and coffee is delivered fast. Peak freshness:
-              guaranteed.
-            </p>
+            <div class="choose__card-text">
+              <h4 class="choose__card-title">Free shipping</h4>
+              <p class="choose__card-describtion">
+                We cover the cost and coffee is delivered fast. Peak freshness:
+                guaranteed.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -162,6 +178,9 @@
       <!-- How it works -->
       <section class="work">
         <p class="works__caption">How it works</p>
+        <div class="cards__decoration">
+          <span></span><span></span><span></span>
+        </div>
         <div class="work__cards-wrapper">
           <div class="work__card">
             <h1 class="work__card-number">01</h1>

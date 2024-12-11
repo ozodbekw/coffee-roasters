@@ -1,0 +1,240 @@
+.about__main {
+  display: flex;
+  flex-direction: column;
+  gap: 16.8rem;
+}
+
+.about {
+  padding: 13.7rem 8.5rem;
+  border-radius: 1rem;
+  background-image: url(../images/about/desktop/image-hero-whitecup.jpg);
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 40%);
+}
+
+.about__title {
+  font-family: "Fraunces";
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 48px;
+  color: $light-cream;
+  margin-bottom: 2.4rem;
+  margin-top: 0;
+}
+.about__describtion {
+  width: 445px;
+  height: 104px;
+  color: $light-cream;
+}
+
+/* Comminents */
+.comminent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.comminent__img {
+  border-radius: 1rem;
+}
+.comminent__title {
+  margin-bottom: 3.2rem;
+  font-family: $headers-font;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 48px;
+  color: $dark-grey-blue;
+}
+.comminent__describtion {
+  width: 540px;
+  height: 260px;
+  opacity: 80%;
+  color: $dark-grey-blue;
+}
+
+/* quality */
+.quality {
+  padding: 0 8.5rem;
+  display: flex;
+  gap: 12.5rem;
+  align-items: center;
+  background-image: url(../images/about/desktop/bg-quality.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.quality__text {
+  margin-top: 17.6rem;
+  margin-bottom: 17.6rem;
+}
+.quality__title {
+  margin-bottom: 3.2rem;
+  font-family: $headers-font;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 48px;
+  color: $light-cream;
+}
+.quality__describtion {
+  opacity: 80%;
+  color: $light-cream;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.quality__img {
+  padding-bottom: 8.5rem;
+  border-radius: 1rem;
+}
+
+/* Headquaarters */
+.headquarters {
+  padding: 0 8.5rem;
+  margin-bottom: 16.8rem;
+}
+.headquarts__title {
+  margin-bottom: 7.2rem;
+  font-family: $headers-font;
+}
+.headquarters__cards-wrapper {
+  display: flex;
+  gap: 9.5rem;
+}
+
+.headquarters__card-title {
+  width: 272px;
+  height: 36px;
+  font-family: $headers-font;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 36px;
+  margin-top: 4.5rem;
+  margin-bottom: 2.4rem;
+  color: $dark-grey-blue;
+}
+.headquarters__card-adress {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  a {
+    color: inherit;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__main {
+    gap: 14.4rem;
+  }
+
+  .about {
+    padding: 13.7rem 5.8rem;
+    border-radius: 1rem;
+    background-image: url(../images/about/desktop/image-hero-whitecup.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 40%);
+  }
+
+  .about__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .about__describtion {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 80%;
+    width: 398px;
+    height: 100px;
+  }
+
+  /* Comminents */
+  .comminent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6.9rem;
+  }
+  .comminent__img {
+    width: 281px;
+    height: 470px;
+    object-fit: cover;
+  }
+
+  .comminent__text {
+    width: 339px;
+    height: 453px;
+    padding: 0px 0px 25px 0px;
+  }
+
+  .comminent__title {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 3rem;
+  }
+  .comminent__describtion {
+    width: 339px;
+    height: 350px;
+  }
+
+  /* quality */
+  .quality {
+    width: 688px;
+    height: 648px;
+
+    padding: 0 8.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12.5rem;
+    align-items: center;
+  }
+  .quality__text {
+    margin-top: 17.6rem;
+    margin-bottom: 17.6rem;
+  }
+  .quality__title {
+    margin-top: 20rem;
+    margin-bottom: 3.2rem;
+    font-family: $headers-font;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+    color: $light-cream;
+  }
+  .quality__describtion {
+    opacity: 80%;
+    color: $light-cream;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .quality__img {
+    padding-bottom: 6.4rem;
+    object-fit: cover;
+    position: absolute;
+    width: 573px;
+    height: 320px;
+  }
+
+  /* Headquaarters */
+  .headquarters {
+    padding: 0;
+    margin-bottom: 16.8rem;
+  }
+  .headquarts__title {
+    margin-bottom: 14.4rem;
+    font-family: $headers-font;
+  }
+
+  .headquarters__card {
+    width: 22.3rem;
+  }
+
+  .headquarters__card-title {
+    width: 223px;
+    height: 36px;
+    font-family: Fraunces 9pt;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 4.8rem;
+    margin-bottom: 2.1rem;
+  }
+}

@@ -29,6 +29,7 @@ body {
   background-color: $light-cream;
   font-size: $body-fs;
   line-height: $body-lh;
+  font-weight: 400;
 }
 
 main {
@@ -58,7 +59,7 @@ main {
 .ring {
   width: 100px;
   height: 100px;
-  border: 6px dotted #FFF;
+  border: 6px dotted #fff;
   border-style: solid solid dotted dotted;
   border-radius: 50%;
   display: inline-block;
@@ -67,7 +68,7 @@ main {
   animation: rotation 2s linear infinite;
 }
 .ring::after {
-  content: '';  
+  content: "";
   box-sizing: border-box;
   position: absolute;
   left: 0;
@@ -83,7 +84,7 @@ main {
   animation: rotationBack 1s linear infinite;
   transform-origin: center center;
 }
-    
+
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
@@ -91,7 +92,7 @@ main {
   100% {
     transform: rotate(360deg);
   }
-} 
+}
 @keyframes rotationBack {
   0% {
     transform: rotate(0deg);
@@ -99,175 +100,21 @@ main {
   100% {
     transform: rotate(-360deg);
   }
-} 
-
-.hero {
-  background-image: url("../images/home/desktop/image-hero-coffeepress.jpg");
-  background-repeat: no-repeat;
-  border-radius: 16px;
-  height: 600px;
-  padding: 117px 85px;
 }
 
-.hero__title {
-  font-family: $headers-font;
-  font-size: $h1-fs;
-  line-height: $h1-lh;
-  color: $light-cream;
-  width: 493px;
-  margin-bottom: 32px;
-}
-.hero__describtion {
-  width: 445px;
-  margin-bottom: 56px;
-}
-
-/* Colleciton */
-
-.collection {
-  text-align: center;
-}
-
-.collection-bg {
-  top: 70px;
-  position: relative;
-  z-index: -1;
-}
-
-.collection__cards {
-  display: flex;
-  justify-content: space-around;
-  gap: 30px;
-}
-
-.collection__card {
-  width: 25.6rem;
-  height: 33.9rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.collection__img {
-  margin-bottom: 7.155rem;
-}
-
-.collection__title {
-  color: $dark-grey-blue;
-  line-height: $h4-lh;
-  margin-bottom: 2.4rem;
-  font: {
-    family: $headers-font;
-    size: $h4-fs;
-    weight: 900;
-  }
-}
-
-.collection__describtion {
-  height: 134px;
-}
-
-/* Choose */
-
-.choose {
-  margin-top: 20rem;
-  margin-bottom: 20rem;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  background-color: $dark-black;
-  border-radius: 10px;
-  position: relative;
-  height: 577px;
-}
-.choose__text {
-  margin-top: 10rem;
-}
-.choose__title {
-  color: $light-cream;
-  margin-bottom: 3.2rem;
-  font: {
-    family: $headers-font;
-    weight: 900;
-    size: $h2-fs;
-  }
-}
-.choose__describtion {
-  width: 540px;
-  height: 80px;
-}
-.choose__cards {
-  display: flex;
-  gap: 3rem;
-  position: absolute;
-  top: 346px;
-}
-.choose__card {
-  background-color: $dark-cyan;
-  color: $light-cream;
-  border-radius: 8px;
-  height: 382px;
-  width: 350px;
-  text-align: center;
-}
-.choose__card-image {
-  margin-top: 7.2rem;
-  margin-bottom: 5.6rem;
-}
-.choose__card-title {
-  line-height: $h4-lh;
-  margin-bottom: 2.4rem;
-  font: {
-    family: $headers-font;
-    weight: 900;
-    size: $h4-fs;
-  }
-}
-.choose__card-describtion {
-  width: 255px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.work {
-  margin: 20rem 8.5rem;
-}
-.works__caption {
-  margin-top: 30rem;
-  font: {
-    family: $headers-font;
-    weight: 900;
-    size: $h4-fs;
-  }
-  line-height: $h4-lh;
-}
-.work__cards-wrapper {
+.cards__decoration {
+  height: 1px;
+  width: 85rem;
   display: flex;
   justify-content: space-between;
-}
-
-.work__card-number {
-  color: $pale-orange;
-  font: {
-    family: $headers-font;
-    weight: 900;
-    size: 7.2rem;
+  align-items: center;
+  background-color: $pale-orange;
+  margin-top: 9.5rem;
+  span {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 2px $dark-cyan solid;
+    background-color: $light-cream;
   }
-}
-.work__card-title {
-  margin-top: -3.8rem;
-  margin-bottom: 4.2rem;
-  color: $dark-grey-blue;
-  line-height: $h3-lh;
-  width: 25.5rem;
-  font: {
-    family: $headers-font;
-    weight: 900;
-    size: $h3-fs;
-  }
-}
-.work__card-describtion {
-  width: 285px;
-  margin-bottom: 6.4rem;
 }

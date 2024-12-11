@@ -26,3 +26,26 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    margin-bottom: 7.2rem;
+    padding: 5.4rem 0;
+    height: 27rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6.5rem;
+    text-align: center;
+  }
+  .footer__links {
+    flex-direction: column;
+    gap: 3.2rem;
+    a {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: 0.9230769276618958px;
+    }
+  }
+}

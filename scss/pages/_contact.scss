@@ -1,0 +1,401 @@
+.subcribe__main {
+  display: flex;
+  flex-direction: column;
+  gap: 16.8rem;
+}
+
+.subcribe {
+  padding: 13.4rem 8.5rem;
+  background-image: url(../images/plan/desktop/image-hero-blackcup.jpg);
+  border-radius: 1rem;
+}
+.subcribe__title {
+  margin-top: 0;
+  margin-bottom: 3.2rem;
+  font-family: $headers-font;
+  color: $light-cream;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 72px;
+}
+.subcribe__describtion {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  width: 445px;
+  height: 78px;
+  color: $light-cream;
+  opacity: 80%;
+}
+
+/* Order steps */
+
+.order__steps {
+  padding: 10rem 15rem 8.5rem;
+  background-image: url(../images/plan/desktop/bg-steps.png);
+}
+.order__cards_decoration {
+  width: 780px;
+  height: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $pale-orange;
+  margin-bottom: 8.2rem;
+  position: relative;
+  span {
+    width: 31px;
+    height: 31px;
+    background-color: transparent;
+    border: #0e8784 2px solid;
+    border-radius: 50%;
+    &:first-child {
+      position: absolute;
+      left: -15px;
+    }
+    &:last-child {
+      position: absolute;
+      right: -15px;
+    }
+  }
+}
+.order__steps_cards {
+  display: flex;
+  gap: 9.5rem;
+}
+.order__steps_card {
+  width: 285px;
+  height: 355px;
+}
+.order__steps-number {
+  font-family: $headers-font;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 72px;
+  color: $pale-orange;
+  margin-bottom: 3.8rem;
+  margin-top: 0;
+}
+.order__steps-title {
+  margin-bottom: 4.2rem;
+  font-family: $headers-font;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 36px;
+  color: $light-cream;
+  width: 25.5rem;
+}
+.order__steps-describtion {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 80%;
+  color: $light-cream;
+  width: 28.5rem;
+}
+
+/* Order summary */
+
+.order-summary {
+  display: flex;
+  gap: 12.5rem;
+}
+
+.coffee__types {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.coffee__type {
+  cursor: pointer;
+  display: flex;
+  gap: 2.25rem;
+  width: 25.5rem;
+}
+
+.coffee__type:not(:last-child) {
+  border-bottom: 1px solid $grey;
+
+  padding-bottom: 2.4rem;
+}
+
+.coffee__number {
+  font-family: $headers-font;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+}
+
+.active__number {
+  color: #0e8784;
+}
+.unactive__number {
+  color: $grey;
+}
+.coffee__name {
+  font-family: $headers-font;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+}
+
+.active__name {
+  color: $dark-grey-blue;
+}
+.unactive__name {
+  opacity: 90%;
+}
+
+.drink__coffee {
+  display: flex;
+  flex-direction: column;
+  gap: 8.8rem;
+}
+.drink__coffee_title {
+  font-family: $headers-font;
+  color: $grey;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 48px;
+}
+
+.drink__coffee_title_arrow {
+  width: 18.19px;
+  height: 11.92px;
+  margin-left: 7.959rem;
+  cursor: pointer;
+}
+.drink__coffee_cards-wrapper {
+  margin-top: -3.2rem;
+  display: flex;
+  gap: 2.3rem;
+}
+.drink__coffee_card {
+  padding: 3.2rem 2.8rem;
+  width: 228px;
+  height: 250px;
+  background-color: #f4f1eb;
+}
+
+.drink__coffee_card-colored {
+  background-color: $dark-cyan;
+  color: $light-cream;
+}
+
+.drink__coffee-title-colored {
+  color: $light-cream;
+  font-family: $headers-font;
+
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  margin-bottom: 2.4rem;
+}
+.drink__coffee-title {
+  font-family: $headers-font;
+  color: $dark-grey-blue;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  margin-bottom: 2.4rem;
+}
+
+.order__questions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order_summary_card {
+  padding: 4.7rem 6.4rem;
+  background-image: url(../images/plan/desktop/bg-order-summary.png);
+  border-radius: 1rem;
+}
+.summaary_caption {
+  opacity: 0.5;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 0.8rem;
+}
+.summary_text {
+  font-family: $headers-font;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 40px;
+  color: $light-cream;
+  span {
+    color: $dark-cyan;
+  }
+}
+
+.btn_order {
+  margin-left: 51.3rem;
+  margin-top: -4.8rem;
+  margin-bottom: 16.8rem;
+  width: 217px;
+  height: 56px;
+  border-radius: 6px;
+  background-color: #e2dedb;
+  color: $light-cream;
+  border: 0;
+  font-family: $headers-font;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .subcribe__main {
+    gap: 14.4rem;
+  }
+
+  .subcribe {
+    padding: 12.7rem 5.8rem;
+    background-position: center;
+    width: 689px;
+    height: 400px;
+  }
+  .subcribe__title {
+    margin-top: 8.7rem;
+    margin-bottom: 3.2rem;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 48px;
+  }
+  .subcribe__describtion {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    width: 398px;
+    height: 75px;
+  }
+
+  /* Order steps */
+
+  .order__steps {
+    padding: 9.7rem 4rem 7rem;
+    width: 768px;
+    height: 640px;
+  }
+  .order__cards_decoration {
+    width: 497px;
+  }
+  .order__steps_cards {
+    display: flex;
+    gap: 0;
+  }
+  .order__steps_card {
+    width: 223px;
+    height: 367px;
+  }
+  .order__steps-number {
+    font-size: 72px;
+    line-height: 72px;
+    margin-bottom: 3.8rem;
+    margin-top: 0;
+  }
+  .order__steps-title {
+    margin-bottom: 4.2rem;
+    font-size: 28px;
+    line-height: 32px;
+    width: 20.5rem;
+  }
+  .order__steps-describtion {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 22.5rem;
+  }
+
+  /* Order summary */
+
+  .order-summary {
+    display: flex;
+    gap: 0;
+  }
+
+  .coffee__types {
+    display: none;
+  }
+
+  .drink__coffee {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+  }
+  .drink__coffee_title {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 48px;
+  }
+
+  .drink__coffee_title_arrow {
+    width: 18.19px;
+    height: 11.92px;
+    margin-left: 7.959rem;
+    cursor: pointer;
+  }
+  .drink__coffee_cards-wrapper {
+    margin-top: -3.2rem;
+    display: flex;
+    gap: 1rem;
+  }
+  .drink__coffee_card {
+    padding: 3.2rem 2.6rem;
+    width: 223px;
+    height: 250px;
+    border-radius: 1rem;
+  }
+
+  .drink__coffee-title {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    margin-bottom: 2.4rem;
+  }
+
+  .order_summary_card {
+    padding: 4.7rem 6.4rem;
+    background-image: url(../images/plan/desktop/bg-order-summary.png);
+    border-radius: 1rem;
+  }
+  .summaary_caption {
+    opacity: 0.5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 0.8rem;
+  }
+  .summary_text {
+    font-family: $headers-font;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 40px;
+    color: $light-cream;
+    span {
+      color: $dark-cyan;
+    }
+  }
+
+  .btn_order {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -4.8rem;
+    margin-bottom: 16.8rem;
+    width: 217px;
+    height: 56px;
+    border-radius: 6px;
+    background-color: #0e8784;
+    color: $light-cream;
+    border: 0;
+    font-family: $headers-font;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+    cursor: pointer;
+  }
+}
