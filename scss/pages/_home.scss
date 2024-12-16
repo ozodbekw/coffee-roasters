@@ -4,6 +4,7 @@
   border-radius: 16px;
   height: 600px;
   padding: 117px 85px;
+  font-family: $body-font;
 }
 
 .hero__title {
@@ -457,7 +458,7 @@
   }
 
   /* Work */
-  .work{
+  .work {
     text-align: center;
   }
   .works__caption {

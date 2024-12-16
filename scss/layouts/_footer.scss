@@ -8,8 +8,14 @@
   justify-content: space-between;
 }
 
+.nav-list-footer {
+  display: flex;
+  gap: 32px;
+}
+
 .footer__links {
   display: flex;
+  flex-direction: row;
   gap: 10.29rem;
   a:hover {
     color: $light-cream;
